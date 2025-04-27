@@ -1,0 +1,18 @@
+{
+    "gpu": {
+      "device": "GPU",
+      "metrics": {
+        "accuracy": 0.4469600021839142,
+        "val_accuracy": 0.43560001254081726,
+        "loss": 1.5641181468963623,
+        "val_loss": 1.587148666381836
+      },
+      "timing": {
+        "warmup": 7.7425501346588135,
+        "training": 24.21848726272583,
+        "total": 43.13910126686096
+      },
+      "model_path": "/mnt/saved_models/gpu_model.keras"
+    },
+    "cpu": null
+  }
