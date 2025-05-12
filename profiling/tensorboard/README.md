@@ -128,12 +128,13 @@ Within the tools menu (as shown in the image below), you can select the input_pi
 
 Similarly, by selecting the `framework_op_stats` tool, you can view a detailed breakdown of operations. For example, after enabling the option Include IDLE time in statistics, you will see a visualization like this: ![freamework_op_stats](./idletime.png) 
 
-This tool is particularly useful for analyzing GPU usage, as it highlights idle time on the device. In the screenshot above, it is evident that the GPU was idle for most of the time. Additionally, the tool provides insights into the time spent on different operation types on the host. For instance, minimal time was spent on Python functions, while a significant portion was allocated to Dataset operations.
+This tool is particularly useful for analyzing GPU usage, as it highlights idle time on the device. In the screenshot above, it is evident that the GPU was idle for most of the time. Additionally, the tool provides insights into the time spent in different parts of the TensorFlow framework. For instance, the majority of active time is spent on Dataset operations with some marked as eagerly executed PyFunc. This indicates that in this particular case, it was an issue with data loading and preprocessing causing the GPUs to idle rather than perform model computation.
 
 
 3. TF Data Bottleneck Analysis:
 
-By selecting the tf_data_bottleneck_analysis tool, you can view a summary of the input pipelines. For example, in the image below: ![freamework_op_stats](./performanceAnalysis.png)It is evident that a significant amount of time was spent on data preprocessing. This analysis helps identify bottlenecks in the input pipeline, enabling you to optimize performance effectively.
+By selecting the tf_data_bottleneck_analysis tool, you will get an automatic analysis of potential bottlenecks in your data pipeline. For example, in the image below: ![freamework_op_stats](./performanceAnalysis.png)It is evident that a significant amount of time was spent on data preprocessing as the time spent generating a batch is high, causing a bottleneck. Additionally, the tool points you to relevant documentation on ways to improve data preprocessing performance.
 
+### Summary
 
 In summary, TensorBoard is an invaluable tool for visualizing metrics such as loss and accuracy, as well as identifying potential issues in your workflow. It is highly recommended to use TensorBoard when working with TensorFlow in your projects.
