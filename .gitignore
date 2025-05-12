@@ -1,0 +1,12 @@
+# Ignore specific large file
+trace_ddp_workers_4.json
+trace_ddp_workers_four4.json
+trace_single_gpu_workers_4.json
+# Ignore a whole folder (if your large files are stored together)
+# logs/
+# traces/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
