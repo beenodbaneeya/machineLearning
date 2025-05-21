@@ -1,5 +1,8 @@
 # Visualizing the traces with the tensorboard.
 If TensorFlow is installed on your cluster, you can use TensorBoard to profile GPU usage. For more details on how to profile GPU performance, refer to the documentation [Optimize TensorFlow performance using the profiler](https://www.tensorflow.org/guide/profiler). In this tutorial, we will explore how to visualize TensorFlow logs on a local machine and learn about various aspects of TensorBoard.
+If you want to set up Pytorch profiler in HPC system, please refer to this github link 
+[Profiling GPU accelerated DL](https://github.com/HichamAgueny/Profiling-GPU-accelerated-DL?tab=readme-ov-file )
+
 
 To view TensorFlow logs locally, you need to install the TensorFlow Profiler. However, if you're using a macOS system, installing TensorFlow with GPU support can be challenging due to compatibility issues. To simplify the process, we will install TensorFlow without GPU support. This approach allows you to view the logs on your local machine, regardless of the GPU-specific setup used to generate the logs.
 
