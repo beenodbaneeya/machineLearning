@@ -134,9 +134,12 @@ if epoch == 2 and prof is not None:
 
 
 ### Main Block
-Finally, we call the train function with the `num_workers=4` to specify the number of subprocesses for data loading as shown below.Note that, we have passed different value for the `num_workers`from our slurm job script.
+Finally, we call the train function with the `num_workers=4` as default to specify the number of subprocesses for data loading as shown below.Note that, we have passed different value for the `num_workers`from our slurm job script as an argument.
 
 ````python
 if __name__ == "__main__":
-    train(num_workers=4)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--num_workers", type=int, default=4)
+    args = parser.parse_args()
+    train(num_workers=args.num_workers)
 ````
