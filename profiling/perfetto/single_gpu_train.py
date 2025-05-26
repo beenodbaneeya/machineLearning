@@ -1,3 +1,4 @@
+import argparse
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -45,4 +46,7 @@ def train(epochs=5, batch_size=32, num_workers=4):
         pass
 
 if __name__ == "__main__":
-    train(num_workers=4)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--num_workers", type=int, default=4)
+    args = parser.parse_args()
+    train(num_workers=args.num_workers)
