@@ -1,0 +1,57 @@
+Starting job 15386776 on c7-8 on saga at Wed May 28 09:39:29 CEST 2025
+
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    underlay of /etc/localtime required more than 50 (95) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (474) bind mounts
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 530.30.02
+Files already downloaded and verified
+Files already downloaded and verified
+Rank 0 - step: 0, loss: 8.5186
+Rank 1 - step: 0, loss: 8.3303
+STAGE:2025-05-28 09:39:46 3772435:3772435 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2025-05-28 09:39:46 3772436:3772436 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Rank 0 - step: 1, loss: 8.0326Rank 1 - step: 1, loss: 10.0363
+
+Rank 1 - step: 2, loss: 9.0498Rank 0 - step: 2, loss: 7.6232
+
+STAGE:2025-05-28 09:39:47 3772436:3772436 ActivityProfilerController.cpp:300] Completed Stage: CollectionSTAGE:2025-05-28 09:39:47 3772435:3772435 ActivityProfilerController.cpp:300] Completed Stage: Collection
+
+STAGE:2025-05-28 09:39:48 3772435:3772435 output_json.cpp:417] Completed Stage: Post Processing
+Rank 0 - step: 3, loss: 6.5017
+STAGE:2025-05-28 09:39:48 3772436:3772436 output_json.cpp:417] Completed Stage: Post Processing
+Rank 1 - step: 3, loss: 7.4443
+Rank 0 - step: 4, loss: 7.1813
+Rank 1 - step: 4, loss: 9.0654
+STAGE:2025-05-28 09:39:48 3772435:3772435 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2025-05-28 09:39:48 3772436:3772436 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Rank 0 - step: 5, loss: 8.1857
+Rank 1 - step: 5, loss: 9.2004
+Rank 0 - step: 6, loss: 8.1754
+Rank 1 - step: 6, loss: 8.5655
+STAGE:2025-05-28 09:39:48 3772435:3772435 ActivityProfilerController.cpp:300] Completed Stage: CollectionSTAGE:2025-05-28 09:39:48 3772436:3772436 ActivityProfilerController.cpp:300] Completed Stage: Collection
+
+STAGE:2025-05-28 09:39:50 3772436:3772436 output_json.cpp:417] Completed Stage: Post Processing
+Rank 1 - step: 7, loss: 8.0091
+STAGE:2025-05-28 09:39:50 3772435:3772435 output_json.cpp:417] Completed Stage: Post Processing
+Rank 0 - step: 7, loss: 7.2708
+Rank 0 - step: 8, loss: 7.3645
+Rank 1 - step: 8, loss: 7.2797
+STAGE:2025-05-28 09:39:50 3772435:3772435 ActivityProfilerController.cpp:294] Completed Stage: Warm UpSTAGE:2025-05-28 09:39:50 3772436:3772436 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+
+Rank 0 - step: 9, loss: 6.8466
+Rank 1 - step: 9, loss: 6.7494
+Rank 0 - step: 10, loss: 4.8484
+Rank 1 - step: 10, loss: 5.9640
+STAGE:2025-05-28 09:39:50 3772435:3772435 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2025-05-28 09:39:50 3772436:3772436 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2025-05-28 09:39:51 3772435:3772435 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2025-05-28 09:39:51 3772436:3772436 output_json.cpp:417] Completed Stage: Post Processing
+
+--Job ID: 15386776
+--total nbr of gpus 2
+/var/spool/slurmd/job15386776/slurm_script: line 36: SLURM_GPUS_PER_NODE: unbound variable
+
+
+GPU usage stats:
+Job 15386776 completed at Wed May 28 09:40:07 CEST 2025

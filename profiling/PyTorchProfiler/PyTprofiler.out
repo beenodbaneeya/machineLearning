@@ -1,0 +1,39 @@
+Starting job 15384666 on c7-8 on saga at Tue May 27 10:46:48 CEST 2025
+
+INFO:    Environment variable SINGULARITY_TMPDIR is set, but APPTAINER_TMPDIR is preferred
+INFO:    underlay of /etc/localtime required more than 50 (95) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (474) bind mounts
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 530.30.02
+Files already downloaded and verified
+STAGE:2025-05-27 10:46:59 3713080:3713080 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2025-05-27 10:46:59 3713080:3713080 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2025-05-27 10:47:00 3713080:3713080 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2025-05-27 10:47:00 3713080:3713080 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2025-05-27 10:47:00 3713080:3713080 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2025-05-27 10:47:01 3713080:3713080 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2025-05-27 10:47:01 3713080:3713080 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2025-05-27 10:47:01 3713080:3713080 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2025-05-27 10:47:02 3713080:3713080 output_json.cpp:417] Completed Stage: Post Processing
+step:0
+step:1
+step:2
+step:3
+step:4
+step:5
+step:6
+step:7
+step:8
+step:9
+step:10
+
+--Print GPU: 1
+True
+
+--Job ID: 15384666
+--total nbr of gpus 1
+--nbr of gpus_per_node 1
+
+
+GPU usage stats:
+Job 15384666 completed at Tue May 27 10:47:03 CEST 2025
